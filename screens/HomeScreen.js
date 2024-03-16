@@ -8,6 +8,7 @@ const HomeScreen = () => {
   return (
     <SafeAreaView  >
         <Header/>
+         
         <Content/>
     </SafeAreaView>
   )

@@ -3,57 +3,74 @@ import React from 'react'
 
 const Header = () => {
   return (
+    <>
     <View style= {styles.container}>
         
-        <View style={styles.logAndText}>
-        <TouchableOpacity>
-        <Image 
-        styles={styles.logo}
-        source= {require('../../assets/dribbble-fill.png')}
-        />
-        <Text>connect to ppl</Text>  
-        </TouchableOpacity>
+        <View style={styles.logo}>
+            <TouchableOpacity>
 
 
+                {/* <Image                
+                source= {require('../../assets/dribbble-fill.png')}
+                /> */}
+
+
+                <Text style={styles.logotext}>YeRaju</Text>
+            </TouchableOpacity>
         </View>
        
-        <View style={styles.iconsContainer}>
-            <Image          
-            source={require('../../assets/chat-3-line.png')}
-            />           
-
-        </View>
-
-      
+        <View style={styles.profile}>
+            <TouchableOpacity>
+            <Image
+            style = {styles.profilePic}
+            source= {require('../../assets/profilePic.png')}
+            />
+            </TouchableOpacity>            
+        </View>  
+        
     </View>
+    <View style={styles.Seperator}></View>
+    </>
   )
 }
+
+
 const styles = StyleSheet.create({
     container:{
-        backgroundColor:"#eee",
+        
         justifyContent: 'space-between',
         alignItems: 'center',
-        flexDirection: 'row',        
+        flexDirection: 'row',
+        padding:10        
     },
-    logAndText:{
+
+    logo:{
         flexDirection: 'row',
         marginHorizontal: 20,
+    },
+
+    logotext:{
+        fontSize:25
 
     },
 
-    iconsContainer:{
-        flexDirection:'row',
-        marginHorizontal: 20,
-       
+    profile:{        
+        marginHorizontal: 10, 
+    },
+
+    profilePic:{
+       height:50,
+       width:50,
+       borderRadius:25
+    },
+
+    Seperator:{
+        height: 1,
+        width:'100%',
+        backgroundColor:'#ddd'
 
     },
-    logo:{
-        height:550,
-        width:50,
-        resizeMode:'contain',
-        
-        
-    },
+  
 })
 
 export default Header
