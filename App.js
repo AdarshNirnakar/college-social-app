@@ -6,9 +6,9 @@ import HomeScreen from './screens/HomeScreen';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>College collaboration application </Text>
+    <View >
       <StatusBar style="auto" />
+      <HomeScreen />
     </View>
     
   );
