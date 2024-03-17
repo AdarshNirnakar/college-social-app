@@ -24,7 +24,7 @@ const Header = () => {
             <TouchableOpacity>
             <Image
             style = {styles.profilePic}
-            source= {require('../../assets/profilePic.png')}
+            source= {require('../../assets/images/profilePic.png')}
             />
             </TouchableOpacity>            
         </View>  
@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginHorizontal: 20,
     },
+
     profile:{        
         marginHorizontal: 10, 
     },
