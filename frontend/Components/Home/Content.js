@@ -1,5 +1,6 @@
 import { View,StyleSheet, Text, ScrollView } from 'react-native'
 import React from 'react'
+import GlobalStyles from '../styles/GlobalStyles'
 
 
 const Content = () => {
@@ -7,16 +8,16 @@ const Content = () => {
     <>
     <View style={styles.Container}>
       
-      <View style={styles.button}>
-        <Text style={styles.Text}>get help</Text> 
+      <View style={GlobalStyles.button}>
+        <Text style={GlobalStyles.Text}>get help</Text> 
       </View>
 
-      <View style={globalStyles.button,}>
-        <Text style={styles.Text}>help others</Text> 
+      <View style={GlobalStyles.button}>
+        <Text style={GlobalStyles.Text}>help others</Text> 
       </View>
 
     </View>
-    <View style={styles.Seperator}></View>
+    <View style={GlobalStyles.Seperator}></View>
     </>
     
   )
@@ -26,36 +27,7 @@ const styles = StyleSheet.create({
     height:'80%',
     alignItems:'stretch',
     justifyContent:'center',
-   
   },
-
-  // button:{
-  //   padding:50,
-  //   backgroundColor:'#9B64E1',
-  //   borderRadius:25,
-  //   marginTop:20,
-  //   marginHorizontal:40
-   
-  // },
-
- 
-
-  Text:{
-    fontSize:25
-  },
-   Seperator:{
-        height: 1,
-        width:'100%',
-        backgroundColor:'#ddd'
-
-    },
-    Seperator:{
-      height: 1,
-      width:'100%',
-      backgroundColor:'#ddd'
-
-  },
-  
 })
 
 export default Content

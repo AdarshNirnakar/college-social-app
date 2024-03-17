@@ -1,26 +1,27 @@
 import { View, Text, Image,StyleSheet } from 'react-native'
 import React from 'react'
+import GlobalStyles from '../styles/GlobalStyles'
 
 const Footer = () => {
   return (
     <View style={styles.Container}>
-        <View style={styles.iconsAndText}>
+        <View style={GlobalStyles.iconsAndName}>
             <Image 
-            style={styles.icons}
+            style={GlobalStyles.icons}
             source={require('../../assets/home.png')}            
             />
             <Text>Home</Text>
         </View>
-        <View style={styles.iconsAndText}>
+        <View style={GlobalStyles.iconsAndName}>
             <Image 
-            style={styles.icons}
+            style={GlobalStyles.icons}
             source={require('../../assets/chat.png')}            
             />
             <Text>Chats</Text>
         </View>
-        <View style={styles.iconsAndText}>
+        <View style={GlobalStyles.iconsAndName}>
             <Image 
-            style={styles.icons}
+            style={GlobalStyles.icons}
             source={require('../../assets/notification.png')}            
             />
             <Text>Notifications</Text>
@@ -35,23 +36,8 @@ const styles = StyleSheet.create({
        
         flexDirection:'row',
         justifyContent:"space-around",
-    },
-
-    iconsAndText:{
-        alignItems:'center',
-        
         
     },
-
-    icons:{
-        marginTop:5,
-        height:50,
-        width:50,
-        resizeMode:'cover'
-
-    }
-   
-
 })
 
 export default Footer

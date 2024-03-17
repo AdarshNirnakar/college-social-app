@@ -1,5 +1,6 @@
 import { View,Image,StyleSheet, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
+import GlobalStyles from '../styles/GlobalStyles'
 
 const Header = () => {
   return (
@@ -15,7 +16,7 @@ const Header = () => {
                 /> */}
 
 
-                <Text style={styles.logotext}>YeRaju</Text>
+                <Text style={GlobalStyles.Text}>YeRaju</Text>
             </TouchableOpacity>
         </View>
        
@@ -29,7 +30,7 @@ const Header = () => {
         </View>  
         
     </View>
-    <View style={styles.Seperator}></View>
+    <View style={GlobalStyles.Seperator}></View>
     </>
   )
 }
@@ -48,12 +49,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginHorizontal: 20,
     },
-
-    logotext:{
-        fontSize:25
-
-    },
-
+    
     profile:{        
         marginHorizontal: 10, 
     },
@@ -64,13 +60,6 @@ const styles = StyleSheet.create({
        borderRadius:25
     },
 
-    Seperator:{
-        height: 1,
-        width:'100%',
-        backgroundColor:'#ddd'
-
-    },
-  
 })
 
 export default Header
