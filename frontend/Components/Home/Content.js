@@ -1,16 +1,17 @@
 import { View,StyleSheet, Text, ScrollView } from 'react-native'
 import React from 'react'
 
+
 const Content = () => {
   return (
     <>
     <View style={styles.Container}>
       
-      <View style={styles.boxGetHelp}>
+      <View style={styles.button}>
         <Text style={styles.Text}>get help</Text> 
       </View>
 
-      <View style={styles.boxHelpOthers}>
+      <View style={globalStyles.button,}>
         <Text style={styles.Text}>help others</Text> 
       </View>
 
@@ -24,25 +25,20 @@ const styles = StyleSheet.create({
   Container:{
     height:'80%',
     alignItems:'stretch',
-    justifyContent:'space-evenly',
+    justifyContent:'center',
    
   },
 
-  boxGetHelp:{
-    padding:50,
-    backgroundColor:'#9B64E1',
-    borderRadius:25,
-    margin:50,
-    marginBottom:-40
-  },
+  // button:{
+  //   padding:50,
+  //   backgroundColor:'#9B64E1',
+  //   borderRadius:25,
+  //   marginTop:20,
+  //   marginHorizontal:40
+   
+  // },
 
-  boxHelpOthers:{
-    padding:50,
-    backgroundColor:'#9B64E1',
-    borderRadius:25,
-    margin:50,
-    marginTop:-40,
-  },
+ 
 
   Text:{
     fontSize:25
