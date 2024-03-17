@@ -49,7 +49,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginHorizontal: 20,
     },
-    
     profile:{        
         marginHorizontal: 10, 
     },
