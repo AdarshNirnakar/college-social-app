@@ -17,17 +17,36 @@ export default StyleSheet.create({
         height: 1,
         width:'100%',
         backgroundColor:'#ddd'
-
     },
 
     icons:{
-        marginTop:5,
-        height:50,
-        width:50,
+        height:30,
+        width:30,
+        resizeMode: 'contain',
+        backgroundColor:'#ddd',
     },
 
     iconsAndName:{
-        alignItems:'center',
+
+
+
+        // alignItems:'center',
+        // height:60,
+        // width:40,
+        // backgroundColor:'red',
+        // aspectRatio:3/2,
+        // objectFit:'contain',
+        
+        
+        
     },
+
+    largeIcon: {
+        height: 80, // Height for the larger icon
+        width: 80, // Width for the larger icon
+        resizeMode: 'contain'
+      },
+
+    
 
 });
