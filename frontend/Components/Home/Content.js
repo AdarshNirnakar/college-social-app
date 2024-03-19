@@ -9,7 +9,7 @@ const Content = () => {
     <View style={styles.Container}>
       
       <View style={GlobalStyles.button}>
-        <Text style={GlobalStyles.Text}>get help</Text> 
+        <Text className ='text-lg'>get help</Text> 
       </View>
 
       <View style={GlobalStyles.button}>
