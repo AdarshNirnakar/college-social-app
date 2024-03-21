@@ -24,9 +24,10 @@ const Content = () => {
 };
 const styles = StyleSheet.create({
   Container: {
-    height: "80%",
     alignItems: "stretch",
     justifyContent: "center",
+    backgroundColor: "white",
+    flex: 15,
   },
 });
 

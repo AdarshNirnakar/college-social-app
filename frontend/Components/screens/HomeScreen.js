@@ -6,10 +6,10 @@ import Content from "../../Components/Home/Content";
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView>
+    <View className="flex-1">
       <Header />
       <Content />
-    </SafeAreaView>
+    </View>
   );
 };
 export default HomeScreen;

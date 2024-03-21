@@ -32,6 +32,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "row",
     padding: 10,
+    flex: 1,
+    backgroundColor: "white",
   },
 
   logo: {

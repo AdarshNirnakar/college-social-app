@@ -1,5 +1,6 @@
 import "react-native-gesture-handler";
 import { Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
@@ -22,9 +23,9 @@ const Tab = createBottomTabNavigator();
 const TabNavigator = () => (
   <Tab.Navigator
     screenOptions={{
-      activeTintColor: "blue", // Color for active tab
-      inactiveTintColor: "gray", // Color for inactive tab
-      showLabel: false, // Hide labels
+      activeTintColor: "blue",
+      inactiveTintColor: "gray",
+      showLabel: false,
     }}
   >
     <Tab.Screen
@@ -119,9 +120,11 @@ const MainStack = () => (
 );
 
 const App = () => (
-  <NavigationContainer>
-    <MainStack />
-  </NavigationContainer>
+  <SafeAreaView className="flex-1">
+    <NavigationContainer>
+      <MainStack />
+    </NavigationContainer>
+  </SafeAreaView>
 );
 
 export default App;
