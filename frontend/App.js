@@ -27,6 +27,11 @@ const TabNavigator = () => (
       inactiveTintColor: "gray",
       showLabel: false,
     }}
+    tabBarOptions={{
+      labelStyle: {
+        fontSize: 14,
+      },
+    }}
   >
     <Tab.Screen
       name="Home"
@@ -36,8 +41,8 @@ const TabNavigator = () => (
         tabBarIcon: ({ focused, color, size }) => (
           <View style={{ alignItems: "center" }}>
             <HomeSvg
-              width={size}
-              height={size}
+              width={size + 5}
+              height={size + 5}
               fill={focused ? "blue" : "gray"}
             />
           </View>
@@ -52,8 +57,8 @@ const TabNavigator = () => (
         tabBarIcon: ({ focused, color, size }) => (
           <View style={{ alignItems: "center" }}>
             <NotificationSvg
-              width={size}
-              height={size}
+              width={size + 5}
+              height={size + 5}
               fill={focused ? "blue" : "gray"}
             />
           </View>
@@ -68,8 +73,8 @@ const TabNavigator = () => (
         tabBarIcon: ({ focused, color, size }) => (
           <View style={{ alignItems: "center" }}>
             <MessageSvg
-              width={size}
-              height={size}
+              width={size + 5}
+              height={size + 5}
               fill={focused ? "blue" : "gray"}
             />
           </View>
