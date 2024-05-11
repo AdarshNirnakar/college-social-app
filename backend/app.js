@@ -5,6 +5,10 @@ var logger = require("morgan");
 
 const cors = require("cors");
 const { default: checkAuth } = require("./services/fbAuth");
+const { mongoClient } = require("./services/mongoDb");
+
+await mongoClient.connect();
+const database = client.db(process.env.DATABASE);
 
 var app = express();
 
