@@ -27,11 +27,6 @@ const TabNavigator = () => (
       inactiveTintColor: "gray",
       showLabel: false,
     }}
-    tabBarOptions={{
-      labelStyle: {
-        fontSize: 14,
-      },
-    }}
   >
     <Tab.Screen
       name="Home"
