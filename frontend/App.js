@@ -20,77 +20,78 @@ import NotificationSvg from "./assets/svg/Notification-bell.svg";
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
-const TabNavigator = () => (
-  <Tab.Navigator
-    screenOptions={{
-      activeTintColor: "blue",
-      inactiveTintColor: "gray",
-      showLabel: false,
-    }}
-  >
-    <Tab.Screen
-      name="Home"
-      component={HomeScreen}
-      options={{
-        headerShown: false,
-        tabBarIcon: ({ focused, color, size }) => (
-          <View style={{ alignItems: "center" }}>
-            <HomeSvg
-              width={size + 5}
-              height={size + 5}
-              fill={focused ? "blue" : "gray"}
-            />
-          </View>
-        ),
-      }}
-    />
-    <Tab.Screen
-      name="Notifications"
-      component={NotificationScreen}
-      options={{
-        headerShown: false,
-        tabBarIcon: ({ focused, color, size }) => (
-          <View style={{ alignItems: "center" }}>
-            <NotificationSvg
-              width={size + 5}
-              height={size + 5}
-              fill={focused ? "blue" : "gray"}
-            />
-          </View>
-        ),
-      }}
-    />
-    <Tab.Screen
-      name="Chat"
-      component={ChatScreen}
-      options={{
-        headerShown: false,
-        tabBarIcon: ({ focused, color, size }) => (
-          <View style={{ alignItems: "center" }}>
-            <MessageSvg
-              width={size + 5}
-              height={size + 5}
-              fill={focused ? "blue" : "gray"}
-            />
-          </View>
-        ),
-      }}
-    />
-  </Tab.Navigator>
-);
+// const TabNavigator = () => (
+//   <Tab.Navigator
+//     screenOptions={{
+//       activeTintColor: "blue",
+//       inactiveTintColor: "gray",
+//       showLabel: false,
+//     }}
+//   >
+//     <Tab.Screen
+//       name="Home"
+//       component={HomeScreen}
+//       options={{
+//         headerShown: false,
+//         tabBarIcon: ({ focused, color, size }) => (
+//           <View style={{ alignItems: "center" }}>
+//             <HomeSvg
+//               width={size + 5}
+//               height={size + 5}
+//               fill={focused ? "blue" : "gray"}
+//             />
+//           </View>
+//         ),
+//       }}
+//     />
+//     <Tab.Screen
+//       name="Notifications"
+//       component={NotificationScreen}
+//       options={{
+//         headerShown: false,
+//         tabBarIcon: ({ focused, color, size }) => (
+//           <View style={{ alignItems: "center" }}>
+//             <NotificationSvg
+//               width={size + 5}
+//               height={size + 5}
+//               fill={focused ? "blue" : "gray"}
+//             />
+//           </View>
+//         ),
+//       }}
+//     />
+//     <Tab.Screen
+//       name="Chat"
+//       component={ChatScreen}
+//       options={{
+//         headerShown: false,
+//         tabBarIcon: ({ focused, color, size }) => (
+//           <View style={{ alignItems: "center" }}>
+//             <MessageSvg
+//               width={size + 5}
+//               height={size + 5}
+//               fill={focused ? "blue" : "gray"}
+//             />
+//           </View>
+//         ),
+//       }}
+//     />
+//   </Tab.Navigator>
+// );
 
 const MainStack = () => (
   <Stack.Navigator>
     <Stack.Screen
-      name="Tabs"
-      component={TabNavigator}
-      options={{ headerShown: false }}
-    />
-    <Stack.Screen
       name="Home"
       component={HomeScreen}
       options={{ headerShown: false }}
     />
+    {/* <Stack.Screen
+      name="Tabs"
+      component={TabNavigator}
+      options={{ headerShown: false }}
+    /> */}
+
     <Stack.Screen
       name="Notifications"
       component={NotificationScreen}
